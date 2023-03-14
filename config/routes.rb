@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   # put "articles/id" ,to: "articles#upadte"
   # delete "articles/id" ,to: "articles#destroy"
   
-  resources :articles
+  resources :articles do 
+    resources :comments
+  end
   
 end
